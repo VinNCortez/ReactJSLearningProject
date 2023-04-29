@@ -1,0 +1,36 @@
+.counter-container{
+    display: inline-block;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.counter-header{
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.counter{
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 8px 40px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.counter-actions{
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.counter-image{
+    text-align: center;
+}
+
+.counter-image img{
+    width: 75px;
+    height: 75px;
+}
