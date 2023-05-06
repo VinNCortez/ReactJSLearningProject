@@ -1,0 +1,7 @@
+.digital-clock{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid #534545 6px;
+    font-family: DigitalNumbers, serif;
+}

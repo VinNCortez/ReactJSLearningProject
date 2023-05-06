@@ -5,29 +5,62 @@ import WomanImage from "../images/woman.svg";
 import "../css/PeopleCounter.css"
 
 class PeopleCounter extends React.Component{
+    manCountName = "manCount";
+    womenCountName = "womenCount";
 
+    state = {manCount: 0, womenCount: 0};
 
-    constructor(props) {
-        super(props);
-        this.manCounterRef = React.createRef();
-        this.womanCounterRef = React.createRef();
-        this.totalCounterRef = React.createRef();
+    totalCount(){
+        return this.count(this.manCountName) + this.count(this.womenCountName);
     }
 
-    getTotalCount(){
+    count(countName: string){
+        return this.state[countName];
+    }
 
+    increment(countName: string){
+        let state = {};
+        state[countName] = this.state[countName] + 1;
+        this.setState(state);
+    }
+
+    decrement(countName: string){
+        let state = {};
+        state[countName] = this.state[countName] - 1;
+        if (this.state[countName] > 0) {
+            this.setState(state);
+        }
+    }
+
+    reset(){
+        let state = {};
+        state[this.manCountName] = 0;
+        state[this.womenCountName] = 0;
+        this.setState(state);
     }
 
     render() {
+
         return (
-            <div className="people-counter-container">
-                <i className="icon icon-refresh cursor-pointer reset-button"></i>
+            <div className="people-counter-container position-relative">
+                <i onClick={ () => this.reset()} className="icon icon-refresh cursor-pointer reset-button position-absolute"></i>
                 <div className="people-counter-total">
-                    <CounterBox ref={this.totalCounterRef} headerText="Total"/>
+                    <CounterBox countRef={() => this.totalCount() } headerText="Total"/>
                 </div>
                 <div className="people-counter">
-                    <CounterBox ref={this.manCounterRef} headerText="Homens" counterActions imageSrc={ManImage}/>
-                    <CounterBox ref={this.womanCounterRef} headerText="Mulheres" counterActions imageSrc={WomanImage}/>
+                    <CounterBox incrementCallback={ () => this.increment(this.manCountName) }
+                                decrementCallback={ () => this.decrement(this.manCountName) }
+                                countRef={ () => this.count(this.manCountName) }
+                                headerText="Homens"
+                                counterActions
+                                imageSrc={ManImage}/>
+
+                    <CounterBox incrementCallback={ () => this.increment(this.womenCountName) }
+                                decrementCallback={ () => this.decrement(this.womenCountName) }
+                                countRef={ () => this.count(this.womenCountName) }
+                                headerText="Mulheres"
+                                counterActions
+                                imageSrc={WomanImage}/>
                 </div>
             </div>
         );

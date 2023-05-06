@@ -1,17 +1,26 @@
 .red{
-    background-color: #ff3b3b;
+    background-color: var(--red);
     color: white;
 }
 
 .red .icon{
-    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(102%) contrast(102%);
+    filter: var(--red-to-white);
 }
 
 .green{
-    background-color: #529e14;
+    background-color: var(--green);
     color: white;
 }
 
 .green .icon{
-    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(102%) contrast(102%);
+    filter: var(--green-to-white);
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.font-red{
+    color: var(--red);
 }
