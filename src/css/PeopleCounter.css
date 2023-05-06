@@ -24,4 +24,6 @@
     width: 25px;
     height: 25px;
     background-size: 25px;
+    animation-name: rotate-icon;
+    animation-duration: 300ms;
 }
