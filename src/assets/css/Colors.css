@@ -3,22 +3,18 @@
     color: white;
 }
 
-.red .icon{
-    filter: var(--red-to-white);
-}
-
 .green{
     background-color: var(--green);
     color: white;
 }
 
-.green .icon{
-    filter: var(--green-to-white);
-}
-
 .black{
     background-color: black;
     color: white;
+}
+
+.red .icon, .green .icon{
+    filter: var(--black-to-white);
 }
 
 .font-red{

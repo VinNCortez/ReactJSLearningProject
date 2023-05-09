@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/Counter.css"
+import "../../assets/css/Counter.css"
 import CounterActions from "./CounterActions";
 import CounterImage from "./CounterImage";
 
@@ -12,12 +12,6 @@ class CounterBox extends React.Component{
 
     increment(){
         this.setState({count: this.count() + 1});
-    }
-
-    decrement(count: number){
-        if (this.count() > 0) {
-            this.setState({count: this.count() - 1});
-        }
     }
 
     restart(){

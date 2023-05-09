@@ -1,10 +1,10 @@
-import React from "react";
+import {Component} from "react";
 import CounterBox from "./CounterBox/CounterBox";
-import ManImage from "../images/man.svg";
-import WomanImage from "../images/woman.svg";
-import "../css/PeopleCounter.css"
+import ManImage from "../assets/images/man.svg";
+import WomanImage from "../assets/images/woman.svg";
+import "../assets/css/PeopleCounter.css"
 
-class PeopleCounter extends React.Component{
+class PeopleCounter extends Component{
     manCountName = "manCount";
     womenCountName = "womenCount";
 

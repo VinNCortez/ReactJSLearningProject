@@ -1,7 +1,7 @@
-import React from "react";
-import "../css/Clock.css"
+import {Component} from "react";
+import "../assets/css/Clock.css"
 
-class Clock extends React.Component{
+class Clock extends Component{
   constructor(props) {
     super(props);
     this.state = {clockValue: new Date()};

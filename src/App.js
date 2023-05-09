@@ -1,12 +1,12 @@
-import React from "react";
-import "./css/Icons.css"
-import "./css/Colors.css"
-import "./css/Buttons.css"
+import {Component} from "react";
+import "./assets/css/Icons.css"
+import "./assets/css/Colors.css"
+import "./assets/css/Buttons.css"
 import Clock from "./components/Clock";
 import PeopleCounter from "./components/PeopleCounter";
 
 
-class App extends React.Component{
+class App extends Component{
     render() {
         return (
             <div id="app">

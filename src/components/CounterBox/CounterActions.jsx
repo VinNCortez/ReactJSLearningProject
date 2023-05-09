@@ -1,6 +1,6 @@
-import React from "react";
+import {Component} from "react";
 
-class CounterActions extends React.Component{
+class CounterActions extends Component{
     render() {
         return (
             <div className="counter-actions">

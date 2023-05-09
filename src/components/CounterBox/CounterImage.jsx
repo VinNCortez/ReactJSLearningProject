@@ -1,6 +1,6 @@
-import React from 'react';
+import {Component} from 'react';
 
-class CounterImage extends React.Component{
+class CounterImage extends Component{
     render() {
         return (
             <div className="counter-image">
