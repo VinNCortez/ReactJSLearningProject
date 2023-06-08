@@ -1,10 +1,10 @@
 .red{
-    background-color: var(--red);
+    background-color: var(--red, red);
     color: white;
 }
 
 .green{
-    background-color: var(--green);
+    background-color: var(--green, green);
     color: white;
 }
 
@@ -18,5 +18,9 @@
 }
 
 .font-red{
-    color: var(--red);
+    color: var(--red, red);
+}
+
+.bd-gray{
+    border-color: var(--gray, gray);
 }

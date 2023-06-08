@@ -13,17 +13,6 @@
     font-size: 1.5em;
 }
 
-.people-counter-container .reset-button{
-    width: 20px;
-    height: 20px;
-    background-size: 20px;
-    right: 10px;
-}
-
-.people-counter-container .reset-button:hover{
-    width: 25px;
-    height: 25px;
-    background-size: 25px;
-    animation-name: rotate-icon;
-    animation-duration: 300ms;
+.counter-actions button + button{
+    margin-left: 10px;
 }

@@ -7,6 +7,8 @@ import "./index.css";
 
 import App from './App';
 import Atividade1 from "./Pages/Atividade1";
+import Atividade2 from "./Pages/Atividade2";
+import Atividade6 from "./Pages/Atividade6";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
     {
         path: "/atividade1/",
         element: <Atividade1/>
+    },
+    {
+        path: "/atividade2/",
+        element: <Atividade2/>
+    },
+    {
+        path: "/atividade6/",
+        element: <Atividade6/>
     }
 ]);
 

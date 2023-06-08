@@ -1,0 +1,38 @@
+.memory-game-container{
+    margin: 20px;
+    width: 360px;
+    padding: 10px;
+    border: solid black 5px;
+    background-color: #9ac8b2;
+    border-radius: 20px;
+}
+
+.memory-game-cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.memory-game-card{
+    padding: 0;
+    margin: 0;
+    border: solid 2px var(--gray);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.memory-game-buttons-container{
+    margin: 10px 0 10px 0;
+    height: 50px;
+}
+
+.memory-game-buttons-container button{
+    height: 50px;
+    width: 70px;
+    font-size: 1em;
+}
+
+.memory-game-buttons-container button + button{
+    margin-left: 10px;
+}

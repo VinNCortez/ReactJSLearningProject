@@ -3,6 +3,7 @@ import CounterBox from "./CounterBox/CounterBox";
 import ManImage from "../assets/images/man.svg";
 import WomanImage from "../assets/images/woman.svg";
 import "../assets/css/PeopleCounter.css"
+import ResetButton from "./ResetButton";
 
 class PeopleCounter extends Component{
     manCountName = "manCount";
@@ -43,7 +44,7 @@ class PeopleCounter extends Component{
 
         return (
             <div className="people-counter-container position-relative">
-                <i onClick={ () => this.reset()} className="icon icon-refresh cursor-pointer reset-button position-absolute"></i>
+                <ResetButton resetFunction={ () => this.reset() }/>
                 <div className="people-counter-total">
                     <CounterBox countRef={() => this.totalCount() } headerText="Total"/>
                 </div>

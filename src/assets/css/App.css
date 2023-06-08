@@ -6,6 +6,7 @@
 :root{
     --red: #ff3b3b;
     --green: #529e14;
+    --gray: #8b8b8b;
     --black-to-white: invert(98%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(102%) contrast(102%);
 }
 
@@ -31,6 +32,21 @@
     right: 0;
 }
 
+.title{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    font-family: sans-serif;
+}
+
 .text-center{
     text-align: center;
+}
+
+.not-selectable{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
