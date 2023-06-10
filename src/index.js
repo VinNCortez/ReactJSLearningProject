@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './assets/css/App.css'
+import "./assets/css/Icons.css"
+import "./assets/css/Colors.css"
+import "./assets/css/Buttons.css"
+import "./assets/css/Animations.css"
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./index.css";
 
-import App from './App';
+import Home from "./Home";
 import Atividade1 from "./Pages/Atividade1";
 import Atividade2 from "./Pages/Atividade2";
 import Atividade6 from "./Pages/Atividade6";
@@ -16,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App/>,
+        element: <Home/>,
     },
     {
         path: "/atividade1/",

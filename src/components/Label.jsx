@@ -27,7 +27,6 @@ export class Label extends Component {
 	}
 
 	render() {
-		console.log(this.state.index);
 		return <h2>{this.text.slice(0, this.state.index)}</h2> ;
 	}
 }

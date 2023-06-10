@@ -13,11 +13,6 @@
     --black-to-white: invert(98%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(102%) contrast(102%);
 }
 
-#app{
-    padding: 10px;
-    margin: 50px;
-}
-
 .cursor-pointer{
     cursor: pointer;
 }

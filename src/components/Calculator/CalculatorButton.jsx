@@ -2,7 +2,7 @@ import {Component} from "react";
 
 export class CalculatorButton extends Component {
 	render() {
-		let buttonClasses = "calculator-button circle big " + this.props.buttonClasses;
+		let buttonClasses = "calculator-button btn circle big " + this.props.buttonClasses;
 
 		if (!this.props.children) {
 			let iconClasses = "icon " + this.props.iconClasses;
