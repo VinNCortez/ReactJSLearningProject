@@ -1,5 +1,6 @@
 .digital-clock{
     display: inline-block;
+    margin: 20px;
     padding: 5px;
     border-radius: 10px;
     border: solid #534545 6px;

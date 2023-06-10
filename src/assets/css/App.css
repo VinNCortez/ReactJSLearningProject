@@ -7,6 +7,9 @@
     --red: #ff3b3b;
     --green: #529e14;
     --gray: #8b8b8b;
+    --orange: #FF9A00;
+    --light-gray: #A5A5A5;
+    --dark-gray: #333333;
     --black-to-white: invert(98%) sepia(0%) saturate(0%) hue-rotate(345deg) brightness(102%) contrast(102%);
 }
 
@@ -49,4 +52,10 @@
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

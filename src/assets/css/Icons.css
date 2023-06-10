@@ -1,7 +1,9 @@
 .icon{
     width: 20px;
     height: 20px;
-    background-size: 20px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
 }
 
@@ -10,9 +12,29 @@
 }
 
 .icon-plus{
-    background-image: url("../icons/plus.svg");
+    background-image: url("../icons/math/plus.svg");
 }
 
 .icon-minus{
-    background-image: url("../icons/minus.svg");
+    background-image: url("../icons/math/minus.svg");
+}
+
+.icon-divide{
+    background-image: url("../icons/math/divide.svg");
+}
+
+.icon-xmark{
+    background-image: url("../icons/math/xmark.svg");
+}
+
+.icon-plus-minus{
+    background-image: url("../icons/math/plus-minus.svg");
+}
+
+.icon-percent{
+    background-image: url("../icons/math/percent.svg");
+}
+
+.icon-equals{
+    background-image: url("../icons/math/equals.svg");
 }

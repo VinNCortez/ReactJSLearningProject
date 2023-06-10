@@ -1,5 +1,5 @@
 import {Component} from "react";
-import PeopleCounter from "../components/PeopleCounter";
+import PeopleCounter from "../components/PeopleCounter/PeopleCounter";
 
 
 export class Atividade2 extends Component {

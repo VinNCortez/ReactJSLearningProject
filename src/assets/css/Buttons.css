@@ -23,6 +23,16 @@ button.small .icon{
     background-size: 12px;
 }
 
+button.big{
+    width: 80px;
+    height: 80px;
+}
+
+button.big .icon{
+    width: 30px;
+    height: 30px;
+}
+
 button:hover{
     border: rgba(33, 25, 28, 0.38) solid 2px;
 }

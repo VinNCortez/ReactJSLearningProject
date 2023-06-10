@@ -57,7 +57,7 @@ export class MemoryGame extends Component {
 		card.show();
 
 		if (this.state.isAttempt && !card.verifyTwin())
-				this.hideAll();
+				setTimeout(() => this.hideAll(), 200);
 		else isAttempt = !(this.state.isAttempt && card.verifyTwin());
 
 		this.setState({cardsArray: this.state.cardsArray, isAttempt: isAttempt});
@@ -72,7 +72,7 @@ export class MemoryGame extends Component {
 				<div className="memory-game-buttons-container">
 					<h1 className="title text-center position-relative">Jogo da Memória <ResetButton resetFunction={ () => this.reset() }/> </h1>
 				</div>
-				<div className="memory-game-cards-container">
+				<div className="memory-game-cards-container d-flex">
 					{
 						this.state.cardsArray.map(
 							(card: MemoryGameCard, index) => {

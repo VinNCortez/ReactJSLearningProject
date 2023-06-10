@@ -1,9 +1,9 @@
 import {Component} from "react";
-import CounterBox from "./CounterBox/CounterBox";
-import ManImage from "../assets/images/man.svg";
-import WomanImage from "../assets/images/woman.svg";
-import "../assets/css/PeopleCounter.css"
-import ResetButton from "./ResetButton";
+import CounterBox from "./CounterBox";
+import ManImage from "../../assets/images/man.svg";
+import WomanImage from "../../assets/images/woman.svg";
+import "../../assets/css/PeopleCounter.css"
+import ResetButton from "../ResetButton";
 
 class PeopleCounter extends Component{
     manCountName = "manCount";

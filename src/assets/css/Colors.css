@@ -8,12 +8,27 @@
     color: white;
 }
 
+.orange{
+    background-color: var(--orange, orange);
+    color: white;
+}
+
+.dark-gray{
+    background-color: var(--dark-gray);
+    color: white;
+}
+
+.light-gray{
+    background-color: var(--light-gray, lightgray);
+    color: black;
+}
+
 .black{
     background-color: black;
     color: white;
 }
 
-.red .icon, .green .icon{
+.red .icon, .green .icon, .dark-gray .icon, .orange .icon{
     filter: var(--black-to-white);
 }
 
